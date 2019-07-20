@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+indent() {
+  sed -u 's/^/       /'
+}
+
+echo "-----> Symlink vendor binaries"
+
+ln -sf /app/.apt/usr/lib/x86_64-linux-gnu/libpthread_nonshared.a /usr/lib/x86_64-linux-gnu/libpthread_nonshared.a
+

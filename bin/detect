@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Symlink VendorBinaries"
+exit 0
+
